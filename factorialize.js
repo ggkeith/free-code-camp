@@ -5,7 +5,7 @@ function factorialize(num)
 	{
 		result = i * result;
 	}
-  return result;
+  console.log(result);
 }
 
 factorialize(5);
