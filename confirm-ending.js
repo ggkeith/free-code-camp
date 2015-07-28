@@ -1,14 +1,15 @@
 function end(str, target) {
-
-	var lastChar = newStr.charAt(newStr.length - 1)
-	if (target === lastChar) {
+	var newStr = str.split("");
+    var lastStr = str.substr(newStr.length - 1);
+  
+	if (target == lastStr) {
 		return true;
 	} else {
 		return false;
 	}
 
 
-    return str;
+    console.log(newStr);
 }
 
-end('Bastian', 'n');
+end('He has to give me a new name', 'name');
