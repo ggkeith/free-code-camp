@@ -1,6 +1,7 @@
 function repeat(str, num) {
-  // repeat after me
-  return str;
+  if (num > 0) {
+    return str.repeat(num);
+  } else {
+    return "";
+  }
 }
-
-repeat('abc', 3);
