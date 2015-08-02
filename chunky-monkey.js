@@ -1,4 +1,5 @@
 function chunk(arr, size) {
+  var newArr = arr.split("").push(2);
 
   return arr;
 }
