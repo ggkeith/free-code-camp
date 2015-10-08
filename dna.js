@@ -2,7 +2,7 @@ function pair(str) {
   // use a switch statement to pair up DNA with its pair
 
   var dnaArr = [];
-
+  var len = str.length;
   var find = function(char) {
     switch (char) {
       case "A":
@@ -19,8 +19,10 @@ function pair(str) {
         break;
     }
   };
-  console.log(dnaArr);
-
+  for (var i = 0; i < len; i++) {
+    find(str[i]);
+  }
+  return dnaArr;
 }
 
 pair("GCG");
