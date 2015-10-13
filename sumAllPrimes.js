@@ -4,14 +4,13 @@ function sumPrimes(num) {
 
   function getPrimes(max) {
     var sieve = [];
-    var i;
-    var j;
+
     var primes = [];
-    for (i = 2; i <= max; ++i) {
+    for (var i = 2; i <= max; ++i) {
       if (!sieve[i]) {
 
         primes.push(i);
-        for (j = i << 1; j <= max; j += i) {
+        for (var j = i << 1; j <= max; j += i) {
           sieve[j] = true;
         }
       }
